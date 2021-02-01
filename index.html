@@ -39,7 +39,7 @@
     <!-- ================== Main ================= -->
     <Main>
         <div class="group__books__row">
-            <div class="book read">
+            <!-- <div class="book read">
                 <button class="btn__close">x</button>
                 <h2 class="title">A Game Of Thrones</h2>
                 <p>By:&nbsp;George R. R. Martin </p>
@@ -78,17 +78,35 @@
                 <p>By:&nbsp;George R. R. Martin </p>
                <p> Number of pages:&nbsp; 694</p>
                <p> Language:&nbsp; English</p>
+               <p> CoverOfBook:&nbsp;Click here to show</p>
                <p class="container_toggle_btn">
                    <span class="read_toggle_label">Mark as read:</span>
                    <span class="wrapper__toggle"><span class="btn__toggle"></span></span>
                </p>
-            </div>
+            </div> -->
         </div>
+        <button class="addBook">
+          +
+        </button>
+        <!-- Modal -->
+         <div class="modale">
+             <button class="close">X</button>
+             <div class="background__model">
+             <input type="text" name="title" placeholder="Title Book"/>
+             <input type="text" name="auther" placeholder="Auther of Book"/>
+             <input type="text" name="numberPage" placeholder="Number of pages"/>
+             <input type="text" name="language" placeholder="Language of the book"/>
+             <button class="add">Add</button>
+            </div>
+         </div>
+  
+        <!-- /Modal -->
+  
 
     </Main>
     <!-- ================== End Main ================= -->
    
 
-  <script></script>  
+  <script src="./JS.js" ></script>
 </body>
 </html>
