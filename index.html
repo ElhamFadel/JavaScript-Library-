@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="https://www.flaticon.com/svg/static/icons/svg/1164/1164682.svg">
-    <title>Document</title>
+    <title>Book Library</title>
 </head>
 <body>
     <!-- ================== Header ================= -->
@@ -16,13 +16,13 @@
        </h1>
        <div class="box__info">
         <h2>Library log</h2>
-        <div class="total__book">
+        <!-- <div class="total__book">
             <h3>Total books count:</h3>
-            <span class="number">1</span>
-        </div>
+            <span class="number">0</span>
+        </div> -->
         <div class="read__book">
             <h3>Read:</h3>
-            <span class="number">1</span>
+            <span class="number">0</span>
         </div>
         <div class="notRead__book">
             <h3>Not read:</h3>
@@ -30,7 +30,7 @@
         </div>
         <div class="key__info">
          <h3><span class="circle"></span>Read</h3>
-         <h3><span class="circle"></span>Not read</h3>
+         <h3><span class="circle notreade"></span>Not read</h3>
         </div>
        </div>
      </header>
@@ -39,51 +39,6 @@
     <!-- ================== Main ================= -->
     <Main>
         <div class="group__books__row">
-            <!-- <div class="book read">
-                <button class="btn__close">x</button>
-                <h2 class="title">A Game Of Thrones</h2>
-                <p>By:&nbsp;George R. R. Martin </p>
-               <p> Number of pages:&nbsp; 694</p>
-               <p> Language:&nbsp; English</p>
-               <p class="container_toggle_btn">
-                   <span class="read_toggle_label">Mark as read:</span>
-                   <span class="wrapper__toggle"><span class="btn__toggle"></span></span>
-               </p>
-            </div>
-            <div class="book read">
-                <button class="btn__close">x</button>
-                <h2 class="title">A Game Of Thrones</h2>
-                <p>By:&nbsp;George R. R. Martin </p>
-               <p> Number of pages:&nbsp; 694</p>
-               <p> Language:&nbsp; English</p>
-               <p class="container_toggle_btn">
-                   <span class="read_toggle_label">Mark as read:</span>
-                   <span class="wrapper__toggle"><span class="btn__toggle"></span></span>
-               </p>
-            </div>
-            <div class="book read">
-                <button class="btn__close">x</button>
-                <h2 class="title">A Game Of Thrones</h2>
-                <p>By:&nbsp;George R. R. Martin </p>
-               <p> Number of pages:&nbsp; 694</p>
-               <p> Language:&nbsp; English</p>
-               <p class="container_toggle_btn">
-                   <span class="read_toggle_label">Mark as read:</span>
-                   <span class="wrapper__toggle"><span class="btn__toggle"></span></span>
-               </p>
-            </div>
-            <div class="book read">
-                <button class="btn__close">x</button>
-                <h2 class="title">A Game Of Thrones</h2>
-                <p>By:&nbsp;George R. R. Martin </p>
-               <p> Number of pages:&nbsp; 694</p>
-               <p> Language:&nbsp; English</p>
-               <p> CoverOfBook:&nbsp;Click here to show</p>
-               <p class="container_toggle_btn">
-                   <span class="read_toggle_label">Mark as read:</span>
-                   <span class="wrapper__toggle"><span class="btn__toggle"></span></span>
-               </p>
-            </div> -->
         </div>
         <button class="addBook">
           +
@@ -92,10 +47,10 @@
          <div class="modale">
              <button class="close">X</button>
              <div class="background__model">
-             <input type="text" name="title" placeholder="Title Book"/>
-             <input type="text" name="auther" placeholder="Auther of Book"/>
-             <input type="text" name="numberPage" placeholder="Number of pages"/>
-             <input type="text" name="language" placeholder="Language of the book"/>
+             <input type="text" name="title" id="title" placeholder="Title Book"/>
+             <input type="text" name="auther" id="auther" placeholder="Auther of Book"/>
+             <input type="text" name="numberPage" id="numberPage" placeholder="Number of pages"/>
+             <input type="text" name="language" id="language" placeholder="Language of the book"/>
              <button class="add">Add</button>
             </div>
          </div>
@@ -106,7 +61,9 @@
     </Main>
     <!-- ================== End Main ================= -->
    
-
-  <script src="./JS.js" ></script>
+    
+  <script src="./JS/JS.js" ></script>
+  <script src="./JS/JSFile.js" ></script>
+  
 </body>
 </html>
